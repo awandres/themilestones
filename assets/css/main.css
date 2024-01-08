@@ -3236,8 +3236,8 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: #000;
-			background-image: url("../../images/MilestonesLogo_900px"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/TheMilestones_14-cropped.jpg");
+			background-color: #fff;
+			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("../../images/TheMilestones_14-cropped.jpg");
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														center center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
@@ -3252,16 +3252,19 @@ input, select, textarea {
 			}
 
 		#wrapper.fade-in:before {
+			background-image: url("../../images/MilestonesLogo_900px.png");
+			background-repeat: no-repeat;
+			background-position:cover;
 			pointer-events: none;
-			-moz-transition: opacity .5s ease-in-out;
-			-webkit-transition: opacity .5s ease-in-out;
-			-ms-transition: opacity .5s ease-in-out;
-			transition: opacity .5s ease-in-out;
-			-moz-transition-delay: 0.25s;
-			-webkit-transition-delay: 0.25s;
-			-ms-transition-delay: 0.25s;
-			transition-delay: 0.25s;
-			background: #1e252d;
+			-moz-transition: opacity .25s ease-in-out;
+			-webkit-transition: opacity .25s ease-in-out;
+			-ms-transition: opacity .25s ease-in-out;
+			transition: opacity .25s ease-in-out;
+			-moz-transition-delay: 0.15s;
+			-webkit-transition-delay: 0.15s;
+			-ms-transition-delay: 0.15s;
+			transition-delay: 0.15s;
+			background: #fff;
 			content: '';
 			display: block;
 			height: 100%;
