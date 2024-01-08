@@ -3221,10 +3221,10 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper {
-		-moz-transition: opacity 0.5s ease;
-		-webkit-transition: opacity 0.5s ease;
-		-ms-transition: opacity 0.5s ease;
-		transition: opacity 0.5s ease;
+		-moz-transition: opacity 0.2s ease;
+		-webkit-transition: opacity 0.2s ease;
+		-ms-transition: opacity 0.2s ease;
+		transition: opacity 0.2s ease;
 		position: relative;
 		z-index: 1;
 		overflow: hidden;
@@ -3256,15 +3256,15 @@ input, select, textarea {
 			background-repeat: no-repeat;
 			background-position:cover;
 			pointer-events: none;
-			-moz-transition: opacity .25s ease-in-out;
-			-webkit-transition: opacity .25s ease-in-out;
-			-ms-transition: opacity .25s ease-in-out;
-			transition: opacity .25s ease-in-out;
-			-moz-transition-delay: 0.15s;
-			-webkit-transition-delay: 0.15s;
-			-ms-transition-delay: 0.15s;
-			transition-delay: 0.15s;
-			background: #fff;
+			-moz-transition: opacity .0s ease-in-out;
+			-webkit-transition: opacity .0s ease-in-out;
+			-ms-transition: opacity .0s ease-in-out;
+			transition: opacity .0s ease-in-out;
+			-moz-transition-delay: 0.0s;
+			-webkit-transition-delay: 0.0s;
+			-ms-transition-delay: 0.0s;
+			transition-delay: 0.0s;
+			background: #ccc;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3273,10 +3273,11 @@ input, select, textarea {
 			position: fixed;
 			top: 0;
 			width: 100%;
+			z-index: 9999;
 		}
 
 		body.is-preload #wrapper.fade-in:before {
-			opacity: 1;
+			opacity: 0;
 		}
 
 		@media screen and (orientation: portrait) {
