@@ -3309,10 +3309,10 @@ input, select, textarea {
 		-webkit-justify-content: -webkit-flex-end;
 		-ms-justify-content: -ms-flex-end;
 		justify-content: flex-end;
-		-moz-transition: opacity .5s ease, -moz-transform .5s ease;
-		-webkit-transition: opacity .5s ease, -webkit-transform .5s ease;
-		-ms-transition: opacity .5s ease, -ms-transform .5s ease;
-		transition: opacity .5s ease, transform .5s ease;
+		-moz-transition: opacity .25s ease, -moz-transform .5s ease;
+		-webkit-transition: opacity .25s ease, -webkit-transform .5s ease;
+		-ms-transition: opacity .25s ease, -ms-transform .5s ease;
+		transition: opacity .25s ease, transform .5s ease;
 		position: relative;
 		cursor: default;
 		text-align: center;
