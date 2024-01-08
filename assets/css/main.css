@@ -3253,14 +3253,14 @@ input, select, textarea {
 
 		#wrapper.fade-in:before {
 			pointer-events: none;
-			-moz-transition: opacity 1s ease-in-out;
-			-webkit-transition: opacity 1s ease-in-out;
-			-ms-transition: opacity 1s ease-in-out;
-			transition: opacity 1s ease-in-out;
-			-moz-transition-delay: 0.75s;
-			-webkit-transition-delay: 0.75s;
-			-ms-transition-delay: 0.75s;
-			transition-delay: 0.75s;
+			-moz-transition: opacity .5s ease-in-out;
+			-webkit-transition: opacity .5s ease-in-out;
+			-ms-transition: opacity .5s ease-in-out;
+			transition: opacity .5s ease-in-out;
+			-moz-transition-delay: 0.25s;
+			-webkit-transition-delay: 0.25s;
+			-ms-transition-delay: 0.25s;
+			transition-delay: 0.25s;
 			background: #1e252d;
 			content: '';
 			display: block;
@@ -3305,10 +3305,10 @@ input, select, textarea {
 		-webkit-justify-content: -webkit-flex-end;
 		-ms-justify-content: -ms-flex-end;
 		justify-content: flex-end;
-		-moz-transition: opacity 1s ease, -moz-transform 1s ease;
-		-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
-		transition: opacity 1s ease, transform 1s ease;
+		-moz-transition: opacity .5s ease, -moz-transform .5s ease;
+		-webkit-transition: opacity .5s ease, -webkit-transform .5s ease;
+		-ms-transition: opacity .5s ease, -ms-transform .5s ease;
+		transition: opacity .5s ease, transform .5s ease;
 		position: relative;
 		cursor: default;
 		text-align: center;
@@ -3419,10 +3419,10 @@ input, select, textarea {
 			-webkit-transform: translateY(2rem);
 			-ms-transform: translateY(2rem);
 			transform: translateY(2rem);
-			-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease, visibility 0.5s;
-			-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease, visibility 0.5s;
-			-ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease, visibility 0.5s;
-			transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
+			-moz-transition: opacity 0.52s ease, -moz-transform 0.25s ease, visibility 0.25s;
+			-webkit-transition: opacity 0.25s ease, -webkit-transform 0.25s ease, visibility 0.25s;
+			-ms-transition: opacity 0.25s ease, -ms-transform 0.5s ease, visibility 0.25s;
+			transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
 			opacity: 0;
 			visibility: hidden;
 		}
