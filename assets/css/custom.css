@@ -9,7 +9,7 @@
 
 @media (max-width:990px) {
 
-  #navPanel .links li a  { color:black!important; text-decoration: none;}
+  #navPanel .links li a  { color:black!important; text-decoration: none; font-size:1.1rem!important;}
   #navPanel .icon { color:black!important; }
 }
 
@@ -19,5 +19,20 @@
   .grid-wrapper > div {
     grid-column: span 2;
     grid-row: span 2;
+}
+#wrapper > .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("../../images/themilestones-band-bg-mobile.jpg");
+  background-size: auto,								auto,														100% auto;
+  background-position: center,								center,														center center;
+  background-repeat: repeat,								no-repeat,													no-repeat;
+  background-attachment: scroll,								scroll,														scroll;
+  z-index: -1;
+  background-size:cover;
 }
 }

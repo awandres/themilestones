@@ -4502,7 +4502,7 @@ input, select, textarea {
 		border: 0;
 		color: #ffffff;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 0.9rem;
+		font-size: 1.3rem;
 		font-weight: 900;
 		letter-spacing: 0.075em;
 		padding: 0.375rem 1.25rem;
@@ -4549,7 +4549,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#navPanelToggle {
-				font-size: 0.8rem;
+				font-size: 1.2rem;
 				padding: 0.25rem 1rem;
 			}
 
