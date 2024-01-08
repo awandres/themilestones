@@ -5,3 +5,19 @@
 #main > .shows { padding-top:3rem!important; }
 #main > .shows h1 { margin-bottom:2em; }
 #main > .photos h1 { margin-bottom:2em; }
+
+
+@media (max-width:990px) {
+
+  #navPanel .links li a  { color:black!important; text-decoration: none;}
+  #navPanel .icon { color:black!important; }
+}
+
+@media (max-width:767px) {
+
+  .masonry-grid > div { display:block; width:100%; }
+  .grid-wrapper > div {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+}
