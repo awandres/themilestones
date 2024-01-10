@@ -96,7 +96,7 @@
 
 			// Enable everywhere else.
 				else {
-
+					console.log('turning on');
 					breakpoints.on('>large', on);
 					breakpoints.on('<=large', off);
 
