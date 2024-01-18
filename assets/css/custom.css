@@ -6,6 +6,18 @@
 #main > .shows h1 { margin-bottom:2em; }
 #main > .photos h1 { margin-bottom:2em; }
 
+#main > .bio h1 { margin-bottom: .3em!important; }
+.text-center > p { text-align: center!important; }
+#main > .bio p { text-align: inherit; font-size:17px!important; text-transform: none;}
+
+.epk-social .fa-facebook-f { color:#1877f2; }
+
+.epk-social .fa-spotify {  color:#1ed760; }
+
+.epk-social .fa-instagram { color:#c32aa3;  }
+
+.epk-social .fa-youtube { color: #ff0000; }
+ul.epk-social li .icon:before { font-size:1.5rem!important;}
 
 @media (max-width:990px) {
 
