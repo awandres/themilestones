@@ -2,6 +2,7 @@
 
 .shows p { text-transform: uppercase; font-size: 15px; text-align:center; }
 
+body.epk { padding:0px!important; }
 #main > .shows { padding-top:3rem!important; }
 #main > .shows h1 { margin-bottom:2em; }
 #main > .photos h1 { margin-bottom:2em; }
