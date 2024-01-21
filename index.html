@@ -241,7 +241,11 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<form method="post" action="#">
+							<form method="post" action="#" id="form">
+
+								<input type="hidden" name="access_key" value="46138fc0-c2b7-46d3-aae6-0f67987ea898">
+
+
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
@@ -249,7 +253,7 @@
 									</div>
 									<div class="field">
 										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
+										<input type="text" name="email" id="email" required/>
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
@@ -259,7 +263,54 @@
 								<ul class="actions">
 									<li><input type="submit" value="Send Message" /></li>
 								</ul>
+								<div class="" id="result">
+
+								</div>
 							</form>
+
+							<script>
+							const form = document.getElementById('form');
+							const result = document.getElementById('result');
+
+							form.addEventListener('submit', function(e) {
+							    const formData = new FormData(form);
+							    e.preventDefault();
+
+							    const object = Object.fromEntries(formData);
+							    const json = JSON.stringify(object);
+
+							    result.innerHTML = "Please wait..."
+
+							    fetch('https://api.web3forms.com/submit', {
+							            method: 'POST',
+							            headers: {
+							                'Content-Type': 'application/json',
+							                'Accept': 'application/json'
+							            },
+							            body: json
+							        })
+							        .then(async (response) => {
+							            let json = await response.json();
+							            if (response.status == 200) {
+							                result.innerHTML = json.message;
+							            } else {
+							                console.log(response);
+							                result.innerHTML = json.message;
+							            }
+							        })
+							        .catch(error => {
+							            console.log(error);
+							            result.innerHTML = "Something went wrong!";
+							        })
+							        .then(function() {
+							            form.reset();
+							            setTimeout(() => {
+							                result.style.display = "none";
+							            }, 3000);
+							        });
+							});
+							</script>
+
 						</section>
 						<section class="split contact">
 							<section>
